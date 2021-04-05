@@ -1,0 +1,85 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style>
+            #main {
+                background:green;
+            }
+            .container {
+                background:blue;
+                height: 200px;
+                width: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container" id="main">
+            I AM A DIV
+        </div>
+    </body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Specificity</title>
+    <style>
+        #main {
+            background:blue;
+        }
+        div {
+            background: red;
+            height: 200px;
+            width: 200px;
+        }
+        .winner {
+            background: aqua !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container winner" id="main" style="background:purple;">
+        I AM A DIV!
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style>
+            div.container {
+                background: green;
+            }
+            body div {
+                background: red;
+            }
+            div.container#main {
+                background: purple;
+            }
+            body #main {
+                background: magneta;
+            }
+            .container {
+                background:blue;
+            }
+            div {
+                background: yellow;
+                height: 200px;
+                width: 200px;
+            }
+            body div.container#main {
+                background: brown;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container" id="main">
+            I AM A DIV!
+        </div>
+    </body>
+</html>
